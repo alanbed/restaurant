@@ -1,0 +1,111 @@
+.slide {
+    height: 45vw;
+    width: 100%;
+}
+
+.section-pslides {
+    padding-bottom: 0px;
+}
+
+@mixin slide-bg {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.img-1 {
+    background: url("/images/soup.jpg");
+    @include slide-bg;
+}
+
+.slide.img-2 {
+    background: url("/images/cake.jpg");
+    @include slide-bg;
+}
+
+.slide.img-3 {
+    background: url("/images/drinks.jpg");
+    @include slide-bg;
+}
+
+.slide.img-4 {
+    background: url("/images/hamburger.jpg");
+    @include slide-bg;
+}
+
+.slide.img-5 {
+    background: url("/images/wine.jpg");
+    @include slide-bg;
+}
+
+.slide.img-6 {
+    background: url("/images/beer.jpg");
+    @include slide-bg;
+}
+
+.img-text {
+    width: 250px;
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+/* Slide Text */
+.img-1 > .img-text::before {
+    content: "Lorem";
+    z-index: 1;
+}
+
+.img-2 > .img-text::before {
+    content: "Lorem";
+    z-index: 1;
+}
+
+.img-3 > .img-text::before {
+    content: "Lorem";
+    z-index: 1;
+}
+
+.img-4 > .img-text::before {
+    content: "Lorem";
+    z-index: 1;
+}
+
+.img-5 > .img-text::before {
+    content: "Lorem";
+    z-index: 1;
+}
+
+.img-6 > .img-text::before {
+    content: "Lorem";
+    z-index: 1;
+}
+
+.dots-cont {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin: 0px 10px;
+    background-color: #bbb;
+    border-radius: 20%;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+
+.dot-active {
+    background-color: #717171;
+}

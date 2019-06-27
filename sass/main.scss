@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import 'navbar';
+@import 'vars';
+@import 'landing';
+@import 'about';
+@import 'photoSlides';
+@import 'menu';
+@import 'drinks';
+@import 'reservations';
+@import 'footer';
+@import "../node_modules/bulma/css/bulma.css";
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+

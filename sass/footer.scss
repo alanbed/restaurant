@@ -1,0 +1,28 @@
+@import 'vars';
+
+.section-footer {
+    padding: 50px;
+    width: 100%;
+    background-color: $black-bg;
+}
+
+.section-copyright {
+    height: 3em;
+    width: 100%;
+    background-color: $black-bg;
+    color: #fff;
+}
+
+.social-media {
+    color: #fff;
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0px 20px;
+    &:hover {
+        transition: all 0.2s;
+        color: #89a3b2;
+    }
+}
