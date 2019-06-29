@@ -10,27 +10,24 @@ $(document).on('scroll', () => {
     }
 });
 
-/* Slider */
+
 function initializeSlides() {
     hideSlides();
-    $(".slide").first().show(); // Current Index 0
+    $(".slide").first().show(); 
 }
 
 function hideSlides() {
-    /* Hide Each Slide Except for the first */
     $(".slide").each((slide) => {
         $(".slide").hide();
     });
 }
 
 function removeDotActives() {
-    /* Dots */
     $('.dots-cont').each(() => {
         $('span').removeClass("dot-active");
     });
 }
 
-/* Add event listener for each dot */
 dots.each((d) => {
     dots.eq(d).click(() => {
         hideSlides()
@@ -42,18 +39,15 @@ dots.each((d) => {
 
 setInterval(function() {
     hideSlides();
-    /* Go through each and display the next */
     if (currentIndex == $('.slide').length - 1) {
         currentIndex = -1;
         dotIndex = -1;
     }
 
-    /* Slides */
     slides.eq(currentIndex + 1).animate({ width: 'toggle' }, 2000);
     currentIndex++;
     dotIndex++;
 
-    /* Dots */
     removeDotActives();
     dots.eq(dotIndex).addClass("dot-active");
 
@@ -61,7 +55,6 @@ setInterval(function() {
 
 initializeSlides();
 
-/* (Navigation Links) */
 $(".home-btn").click(() => {
     $('html, body').animate({ scrollTop: '0px' }, 500);
 });

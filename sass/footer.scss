@@ -26,3 +26,12 @@
         color: #89a3b2;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .section-media a {
+        i {
+            font-size: 100em;
+        }
+    }
+    
+}
